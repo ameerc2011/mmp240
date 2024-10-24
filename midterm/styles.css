@@ -15,11 +15,15 @@ body {
 
 
 header {
+    background:url(images/dexter.png) no-repeat top left/contain,
+    url(images/pngtree-crazy-blood-splash-photo-png-image_5854195.png) no-repeat top right/contain,
+    black;
     display: flex;
     align-items: center;
     background-color: #000000;
     color: white;
-    padding: 20px;
+    padding: 150px;
+    padding-left: 150px;
 }
 
 header h1 img {
