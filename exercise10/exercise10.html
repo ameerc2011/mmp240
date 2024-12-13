@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Menu with Dropdown</title>
+  <style>
+    
+    nav ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      display: block;
+      padding: 1em;
+      background-color: #ccc;
+      color: black;
+      text-decoration: none;
+      border-bottom: solid 1px #666;
+    }
+
+    nav a:hover {
+      background-color: aqua;
+    }
+
+    
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      min-width: 150px;
+      z-index: 1000;
+    }
+
+    nav li:hover ul {
+      display: block;
+    }
+
+    nav li ul li a {
+      background-color: #999;
+      color: white;
+    }
+
+    nav li ul li a:hover {
+      background-color: darkorange;
+    }
+
+    
+    nav ul ul {
+      top: auto;
+      left: auto;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li>
+        <a href="#">Products</a>
+        <ul>
+          <li><a href="#">Fruits</a></li>
+          <li><a href="#">Vegetables</a></li>
+          <li><a href="#">Meat</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Services</a>
+        <ul>
+          <li><a href="#">Consulting</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
