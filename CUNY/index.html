@@ -27,17 +27,36 @@
       <p>Explore design programs across CUNY's campuses and start your creative journey today.</p>
       <a href="https://www.cuny.edu" class="cta-btn">Apply</a>
       <div class="button-container">
-        <a href="category1.html" class="cta-btn">Degree</a>
-        <a href="category2.html" class="cta-btn">Discipline</a>
-        <a href="category3.html" class="cta-btn">Borough</a>
+        
+        <select class="cta-btn dropdown" onchange="location = this.value;">
+          <option value="" disabled selected>Degree</option>
+          <option value="category1-associates.html">Associate's</option>
+          <option value="category1-bachelors.html">Bachelor's</option>
+        </select>
+
+        
+        <select class="cta-btn dropdown" onchange="location = this.value;">
+          <option value="" disabled selected>Discipline</option>
+          <option value="category2-digital-design.html">Digital Design</option>
+          <option value="category2-animation.html">Animation</option>
+          <option value="category2-industrial-design.html">Industrial Design</option>
+        </select>
+
+        
+        <select class="cta-btn dropdown" onchange="location = this.value;">
+          <option value="" disabled selected>Borough</option>
+          <option value="category3-brooklyn.html">Brooklyn</option>
+          <option value="category3-bronx.html">Bronx</option>
+          <option value="category3-queens.html">Queens</option>
+          <option value="category3-manhattan.html">Manhattan</option>
+        </select>
       </div>
     </div>
+    <img src="images/hero-banner.jpeg" alt="Hero Banner">
   </section>
 
-  
   <main>
     <section class="news-events">
-      
       <div class="design-news">
         <h2>Design News</h2>
         <div class="news-card">
@@ -52,8 +71,8 @@
         </div>
       </div>
 
-      
       <div class="events">
+        <img src="images/Digital-Design-Showcase-cropped.jpg" alt="digital design Showcase">
         <h2>Events</h2>
         <div class="event-card">
           <h3>Virtual Digital Design Showcase</h3>
@@ -64,10 +83,12 @@
     </section>
   </main>
 
-  
   <footer>
     <p>&copy; 2024 The City University of New York</p>
   </footer>
+
+  <script>
+   
+  </script>
 </body>
 </html>
-
